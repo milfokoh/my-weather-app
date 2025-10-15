@@ -46,3 +46,5 @@ export const Title = styled.p`
     font-size: 1rem;
   }
 `;
+
+export const ButtonCity = styled.button``;
