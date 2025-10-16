@@ -1,4 +1,4 @@
-import { useEffect, useState, type FC } from 'react';
+import { type FC } from 'react';
 import type { TCardProps } from './Card.types';
 import { TitleWrapper, Title, Wrapper, LocationIcon } from './Card.styled';
 import ImageChange from '../../UI/image-change';
@@ -31,7 +31,7 @@ const Card: FC<TCardProps> = ({}) => {
         <LocationIcon />
         <Title>{weather.info.tzinfo.name || 'not found'}</Title>
       </TitleWrapper>
-      <ImageChange src="src\assets\3.png" />
+      <ImageChange condition={weather.fact.condition} />
       <WeatherInfo
         temp={weather.fact.temp || 0}
         humidity={weather.fact.humidity || 0}
