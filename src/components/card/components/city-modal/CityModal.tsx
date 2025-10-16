@@ -6,8 +6,8 @@ import { ButtonCity } from './CityModal.styled';
 const CityModal: FC<TCityModalProp> = ({ open, onCancel, onSelectCity }) => {
   const cityAndLoc = [
     { name: 'Москва', lat: 55.7558, lon: 37.6176 },
-    { name: 'Санкт-Петербург', lat: 59.9343, lon: 30.3351 },
-    { name: 'Казань', lat: 55.7963, lon: 49.1088 },
+    { name: 'Стамбул', lat: 41.0112, lon: 28.9781 },
+    { name: 'Иркутск', lat: 52.289588, lon: 104.280606 },
     { name: 'Екатеринбург', lat: 56.8389, lon: 60.6057 },
   ];
 
